@@ -40,7 +40,7 @@ exit
 
 == Что использовать
 
-. https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html[`ExecutorService`] -- для вычисления числа Фибоначчи, а именно -- https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadExecutor()[`Executors#newSingleThreadExecutor()`]
+. https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html[`ExecutorService`] -- для вычисления числа Фибоначчи, а именно -- https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executors.html#newCachedThreadPool()[`Executors#newCachedThreadPool()`]
 . link:src/main/java/edu/cancellablefibonacci/Fibonacci.java[`Fibonacci#fibonacciOf`] вычислит `n`-е число Фибоначчи
 . https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Future.html#cancel(boolean)[`Future#cancel`] для отмены вычисления.
 Вызываем с флагом `true`.
